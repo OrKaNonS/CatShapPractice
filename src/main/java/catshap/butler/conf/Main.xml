@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="Image">
+<mapper namespace="Main">
 
-	<select id="selectImage" resultType="Image">
+	<select id="selectMain" resultType="Main">
         SELECT
             P.PRODNO, P.PRODDESCRIPT,
             P.PRODCOUNT, P.REVCOUNT,P.PRODDETAILNAME,
@@ -11,9 +11,9 @@
             PI.PRODIMGNO, PI.PRODNO, PI.PRODIMGPATH 
         FROM
             PRODUCT P
-            LEFT OUTER JOIN PRODIMAGE PI ON P.PRODNO = PI.PRODNO
-            LEFT OUTER JOIN PRODPRICE PP ON P.PRODNO = PP.PRDONO
-            LEFT OUTER JOIN PRODATEGORY PC ON P.PRODCATNO = PC.PRODCATNO
+            JOIN PRODIMAGE PI ON P.PRODNO = PI.PRODNO
+            JOIN PRODPRICE PP ON P.PRODNO = PP.PRDONO
+            JOIN PRODATEGORY PC ON P.PRODCATNO = PC.PRODCATNO
             
        	ORDER BY P.PRODNO DESC
 	</select>

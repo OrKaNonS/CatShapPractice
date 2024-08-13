@@ -7,24 +7,25 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
-import catshap.butler.bean.Image;
-import catshap.butler.interfaces.ImageInterface;
+import catshap.butler.bean.Main;
+import catshap.butler.interfaces.MainInterface;
 
-public class ImageDao implements ImageInterface{
+public class MainDao implements MainInterface {
+
 	private static Reader reader = null;
 	private static SqlSessionFactory ssf = null;
 	
 	static {
 		try {
-			reader = Resources.getResourceAsReader("conf/configuration.xml");
+			reader = Resources.getResourceAsReader("catshap/butler/conf/configuration.xml");
 			ssf = new SqlSessionFactoryBuilder().build(reader);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
 	}
 	
-	public List<Image> selectImage() throws Exception {
-		return ssf.openSession().selectList("Image.selectImage");
+	public List<Main> selectMain() throws Exception {
+		return ssf.openSession().selectList("Main.selectMain");
 	}
-	
+
 }

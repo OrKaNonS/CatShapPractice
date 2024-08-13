@@ -1,15 +1,15 @@
 package catshap.butler.bean;
 
-public class Image {
+public class Main {
 	private String proddescript;
 	private String prodimgpath;
 	private String prodprice;
 	private String proddetailname;
 
-	public Image() {
+	public Main() {
 	}
 
-	public Image(String proddescript, String prodimgpath, String prodprice, String proddetailname) {
+	public Main(String proddescript, String prodimgpath, String prodprice, String proddetailname) {
 		super();
 		this.proddescript = proddescript;
 		this.prodimgpath = prodimgpath;
