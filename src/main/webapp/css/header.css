@@ -140,19 +140,20 @@
   .div417 {
     align-self: stretch;
     position: relative;
-    line-height: 19.6px;
+    line-height: 40px;
   }
   .div417 a{
     font-style: none;
     text-decoration: none;
     color: #333;
+    font-weight:bold;
   }
   .div417:hover{
     border-bottom: 2px solid #333;
   }
   .div421 {
     position: relative;
-    line-height: 19.6px;
+    line-height: 40px;
     align-items: center;
     justify-content: center;
   }
@@ -177,6 +178,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding: var(--padding-7xs-2) 0 0;
+    
   }
   .strong-q18 {
     position: relative;
@@ -188,6 +190,7 @@
   #strongQ a,.reviews17 a{
     text-decoration:none;
     color:#333;
+    line-height:40px;
   }
   .review-container3 {
     display: flex;
