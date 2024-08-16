@@ -7,7 +7,7 @@ public class ReviewView {
 	private int prodNo;
     private int userNo;
     private String uname;
-    private int rewviewNo;
+    private int reviewNo;
     private String revTitle;
     private String revText;
     private Timestamp revRegDate;
@@ -23,7 +23,7 @@ public class ReviewView {
 		this.prodNo = prodNo;
 		this.userNo = userNo;
 		this.uname = uname;
-		this.rewviewNo = rewviewNo;
+		this.reviewNo = rewviewNo;
 		this.revTitle = revTitle;
 		this.revText = revText;
 		this.revRegDate = revRegDate;
@@ -55,11 +55,11 @@ public class ReviewView {
 	}
 
 	public int getRewviewNo() {
-		return rewviewNo;
+		return reviewNo;
 	}
 
 	public void setRewviewNo(int rewviewNo) {
-		this.rewviewNo = rewviewNo;
+		this.reviewNo = rewviewNo;
 	}
 
 	public String getRevTitle() {

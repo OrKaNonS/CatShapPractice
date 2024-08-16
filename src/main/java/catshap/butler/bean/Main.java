@@ -1,28 +1,30 @@
 package catshap.butler.bean;
 
 public class Main {
-	private String proddescript;
+	private String prodtitlename;
 	private String prodimgpath;
 	private String prodprice;
 	private String proddetailname;
+	private int prodNo;
 
 	public Main() {
 	}
 
-	public Main(String proddescript, String prodimgpath, String prodprice, String proddetailname) {
+	public Main(String prodtitlename, String prodimgpath, String prodprice, String proddetailname, int prodNo) {
 		super();
-		this.proddescript = proddescript;
+		this.prodtitlename = prodtitlename;
 		this.prodimgpath = prodimgpath;
 		this.prodprice = prodprice;
 		this.proddetailname = proddetailname;
+		this.prodNo = prodNo;
 	}
 
-	public String getProddescript() {
-		return proddescript;
+	public String getProdtitlename() {
+		return prodtitlename;
 	}
 
-	public void setProddescript(String proddescript) {
-		this.proddescript = proddescript;
+	public void setProdtitlename(String prodtitlename) {
+		this.prodtitlename = prodtitlename;
 	}
 
 	public String getProdimgpath() {
@@ -49,10 +51,22 @@ public class Main {
 		this.proddetailname = proddetailname;
 	}
 
+	public int getProdNo() {
+		return prodNo;
+	}
+
+	public void setProdNo(int prodNo) {
+		this.prodNo = prodNo;
+	}
+
 	@Override
 	public String toString() {
-		return "Image [proddescript=" + proddescript + ", prodimgpath=" + prodimgpath + ", prodprice=" + prodprice
-				+ ", proddetailname=" + proddetailname + "]";
+		return "Main [prodtitlename=" + prodtitlename + ", prodimgpath=" + prodimgpath + ", prodprice=" + prodprice
+				+ ", proddetailname=" + proddetailname + ", prodNo=" + prodNo + "]";
 	}
+
+	
+	
+	
 	
 }// class

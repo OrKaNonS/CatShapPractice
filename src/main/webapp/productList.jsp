@@ -72,6 +72,7 @@
 </head>
 
 <body>
+	<jsp:include page="header.jsp"></jsp:include>
     <div class="a-01" id="a01Container">
         <main class="customer-support1">
             <header class="header2">

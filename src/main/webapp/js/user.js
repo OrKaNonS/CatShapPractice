@@ -27,7 +27,7 @@ $(function () {
             success: function(response) {
                if (response.success) {
                   alert(response.uname + '님 환영합니다.');
-                  window.location.href = 'user_mypage.jsp';
+                  window.location.href = 'mainProc.jsp';
                } else {
                   alert("로그인 실패... 정보를 확인해주세요.");
                }

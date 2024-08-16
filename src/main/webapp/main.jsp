@@ -1,3 +1,4 @@
+<%@page import="catshap.butler.bean.Users"%>
 <%@page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -13,11 +14,11 @@
    	<div id="banner"><img alt="banner" src="./image/banner.png"></div>
 	<div id="main">
 	    <c:forEach var="Main" items="${listMain}">
-	    	<div id="innermain">
-	       		<p><img alt="stock" src="./image/${Main.prodimgpath}" id="img"></p>
-	   		    <p id="name">${Main.proddescript}</p>
-	   		    <p id="name2">${Main.proddetailname}</p>
-			</div>
+	    	<a href="productView.jsp?prodNo=${Main.prodNo}" id="innermain">
+	       		<p id="imgP"><img alt="stock" src="./image/${Main.prodimgpath}" id="img"></p>
+	   		    <p id="name">${Main.prodtitlename}</p>
+	   		    <p id="name2">${Main.prodprice}</p>
+			</a>
 	    </c:forEach>
 	</div>
     
